@@ -1,9 +1,10 @@
 {
-  "name": "furioos-sdk",
+  "name": "furioos-sdk-js",
   "version": "1.2.5",
   "description": "Furioos SDK: create your own furioos UI communicating with your application",
   "main": "index.js",
   "scripts": {
+    "build": "jsdoc -t node_modules/tsd-jsdoc/dist -r classes -d .",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -15,5 +16,9 @@
   "bugs": {
     "url": "https://github.com/Unity-Technologies/furioos-sdk-js/issues"
   },
-  "homepage": "https://github.com/Unity-Technologies/furioos-sdk-js#readme"
+  "homepage": "https://github.com/Unity-Technologies/furioos-sdk-js#readme",
+  "devDependencies": {
+    "jsdoc": "^3.6.6",
+    "tsd-jsdoc": "^2.5.0"
+  }
 }
